@@ -11,7 +11,7 @@ export default function Login() {
             const { data } = await axiosClient.post("/api/users/login", form);
             localStorage.setItem("token", data.token);
             setMsg("Login success");
-            navigate("/profile");
+            navigate("/home");
         } catch (err) {
             setMsg(err?.response?.data?.error || "Login failed");
         }
