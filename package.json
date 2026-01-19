@@ -1,0 +1,13 @@
+{
+  "name": "reactproject",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "cd express-server && npm i && cd ../react-web && npm i && npm run build && cd ../react-native && npm i",
+    "start": "cd express-server && npm run start && cd ../react-web && npm run start && cd ../react-native && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
