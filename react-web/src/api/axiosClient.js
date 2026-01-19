@@ -1,6 +1,6 @@
 import axios from "axios";
 const axiosClient = axios.create({
-    baseURL: process.env.REACT_APP_API_URL || "http://localhost:5000",
+    baseURL: process.env.REACT_APP_API_URL || "https://testexpressserver.onrender.com/",
     headers: { "Content-Type": "application/json" },
 });
 // insert JWT token if available
